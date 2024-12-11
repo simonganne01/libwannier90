@@ -4,14 +4,7 @@ import subprocess
 import sys
 import os
 import platform
-
-# Check if PyBind11 is installed
-try:
-    import pybind11
-except ImportError:
-    print("PyBind11 is not installed. Installing...")
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pybind11'])
-    import pybind11
+import pybind11
 
 class CustomBuildExtCommand(build_ext):
     """Custom build command."""
