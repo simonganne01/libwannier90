@@ -73,7 +73,7 @@ setup(
     version='0.2.1',
     author='Hung Q. Pham',
     author_email='pqh3.14@gmail.com',
-    url='https://github.com/hungpham2017/libwannier90',
+    url='https://github.com/simonganne01/libwannier90.git',
     description='Wannier90 library for python wrapper pyWannier90',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
