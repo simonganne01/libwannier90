@@ -4,7 +4,6 @@ import subprocess
 import sys
 import os
 import platform
-import pybind11
 
 class CustomBuildExtCommand(build_ext):
     """Custom build command."""
@@ -51,7 +50,7 @@ ext_modules = [
     Extension(
         'libwannier90',
         sources=['src/libwannier90.cpp'],
-        include_dirs=['wannier90-3.1.0', pybind11.get_include()],
+        include_dirs=['wannier90-3.1.0'],
         library_dirs=['wannier90-3.1.0'],
         libraries=['lapack', 'blas', 'wannier'],
         extra_compile_args=['-O3', '-Wall', '-shared', '-std=c++11', '-fPIC', '-D_UF'],
